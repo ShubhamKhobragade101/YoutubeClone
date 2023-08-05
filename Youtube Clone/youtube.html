@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube.com clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .search-bar {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      p {
+        font-family: Roboto, Arial;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .video-preview {
+        width: 320px;
+        margin-right: 15px;
+        display: inline-block;
+      }
+      .video-thumbnail {
+        margin-bottom: 12px;
+        overflow: hidden;
+      }
+
+      .thumbnail {
+        width: 320px;
+        border-radius: 12px;
+        display: block;
+        transition: 0.5s all ease-in-out;
+      }
+
+      .thumbnail:hover {
+        transform: scale(1.02);
+      }
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .profile-picture {
+        width: 75%;
+        border-radius: 25px;
+      }
+
+      .video-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 20px;
+      }
+      .channel-name,
+      .view-count {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 12px;
+        color: #969696;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input class="search-bar" type="text" placeholder="Search" />
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720_live.webp"
+            alt="Tomorrowland Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile.jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">Tomorrowland 2023 LIVE from Berlin</p>
+
+            <p class="channel-name">Tomorrowland &#10003;</p>
+
+            <p class="view-count">110K views &#183; 5 min ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720.webp"
+            alt="MrSucideSheep Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (1).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">Best of 2018 MIX</p>
+
+            <p class="channel-name">MrSucideSheep &#10003;</p>
+
+            <p class="view-count">3.7M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720 (1).webp"
+            alt="thebootlegboy2 Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (3).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">MIDNIGHT DRIVE</p>
+
+            <p class="channel-name">thebootlegboy2 &#10003;</p>
+
+            <p class="view-count">17M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720p.webp"
+            alt="MrSucideSheep Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (2).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Summer of 80🌅 / Lo-Fi 80s Vibe / lofi synthwave music
+            </p>
+
+            <p class="channel-name">AmbienceChillz &#10003;</p>
+
+            <p class="view-count">577k views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720 (2).webp"
+            alt="One Piece OST Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (4).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              One Piece|Best of Soundtracks|4K OST MUSIC
+            </p>
+
+            <p class="channel-name">One Piece OST &#10003;</p>
+
+            <p class="view-count">182K views &#183; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img class="thumbnail" src="../VideoThumbnail/hq720 (3).webp" alt="IGN Thumbnail" />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (5).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Lords of Fallen-Official Extended Gameplay Overview
+            </p>
+
+            <p class="channel-name">IGN &#10003;</p>
+
+            <p class="view-count">284K views &#183; 7 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720 (4).webp"
+            alt="Tomorrowland Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (5).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">Dota 2 WTF Moments 497</p>
+
+            <p class="channel-name">Dota Watafak &#10003;</p>
+
+            <p class="view-count">279K views &#183; 11 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="video-thumbnail">
+          <img
+            class="thumbnail"
+            src="../VideoThumbnail/hq720 (5).webp"
+            alt="MrSucideSheep Thumbnail"
+          />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../ProfilePic/channels4_profile (1).jpg" />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">Anatu-Bleach</p>
+
+            <p class="channel-name">MrSucideSheep &#10003;</p>
+
+            <p class="view-count">2.2M views &#183; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
